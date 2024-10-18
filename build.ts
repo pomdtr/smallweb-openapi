@@ -9,5 +9,5 @@ const specs = await resp.json()
 
 await Deno.writeTextFile("openapi.json", JSON.stringify(specs, null, 2))
 
-const content = `export default ${JSON.stringify(specs, null, 2)} as const;`
+const content = `export default ${JSON.stringify(specs, null, 2)} as const;\n`
 await Deno.writeTextFile("mod.ts", content)

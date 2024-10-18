@@ -12,7 +12,7 @@ const client = createClient<NormalizeOAS<typeof openapi>>({
 
 const response = await client['/v0/apps/{app}'].get({
     params: {
-        app: "demo"
+        app: "demo" // params are automatically typed
     }
 })
 if (!response.ok) {
