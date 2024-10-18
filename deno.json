@@ -1,8 +1,9 @@
 {
     "name": "@smallweb/openapi",
-    "version": "0.14.9",
+    "version": "0.14.10",
     "exports": {
-        ".": "./mod.ts"
+        ".": "./mod.ts",
+        "./openapi.json": "./openapi.json"
     },
     "license": "MIT",
     "fmt": {
@@ -14,7 +15,8 @@
     "publish": {
         "include": [
             "README.md",
-            "mod.ts"
+            "mod.ts",
+            "openapi.json"
         ]
     }
 }

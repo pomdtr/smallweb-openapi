@@ -5,5 +5,8 @@
 ```ts
 import openapi from "jsr:@smallweb/openapi";
 
-const client = await createClient({})
+const client = await createClient({
+    endpoint: "https://<api-domain>",
+    params
+})
 ```
