@@ -9,16 +9,12 @@
         "indentWidth": 2
     },
     "tasks": {
-        "refresh": "deno run -A tasks/refresh.ts",
-        "publish-npm": "deno run -A tasks/npm.ts && cd npm && npm publish",
-        "publish-jsr": "deno publish",
-        "publish": "deno run publish-jsr && deno run publish-npm"
+        "build": "deno run -A ./build.ts"
     },
     "publish": {
         "include": [
             "README.md",
-            "mod.ts",
-            "openapi.json"
+            "mod.ts"
         ]
     }
 }
